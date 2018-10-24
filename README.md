@@ -10,9 +10,7 @@ Nombre de sprints prévus : 3
 | 3 | **En tant que** visiteur, **je souhaite** pouvoir me déconnecter **afin de** garantir ma sécurité | ? | 1 | 1 |
 | 4 | **En tant que** développeur, **je souhaite** pouvoir créer un projet via un formulaire simple (nom de projet/equipe de dev/chef de projet/privacité) **afin de** pouvoir le gérer | ? | 3 | 1 |
 | 5 | **En tant que** développeur, **je souhaite** consulter la liste des projet  **afin de** sélectionner le projet qui me concerne | ? | 2 | 2 |
-
 | 6 | **En tant que** développeur, **je souhaite** pouvoir demander l'accés à un projet  **afin de** pouvoir y accéder | ? | 2 | 2 |
-
 | 7 | **En tant que** développeur, **je souhaite** pouvoir autoriser l'accès a des membres de l'équipe **afin qu**'ils puissent accéder à mon projet | ? | 3 | 2 |
 | 8 | **En tant que** développeur, **je souhaite** pouvoir ajouter une issue a mon projet (sous la forme de champs id/description/priorité/difficulté/sprint) **afin de** le décrire | ? | 3 | 1 |
 | 9 | **En tant que** développeur, **je souhaite** pouvoir modifier une issue de mon projet **afin de** suivre les demandes du client | ? | 3 | 2 |
