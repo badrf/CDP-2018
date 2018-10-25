@@ -11,18 +11,16 @@ Nombre de sprints prévus : 3
 | 4 | **En tant que** développeur, **je souhaite** pouvoir créer un projet via un formulaire simple (nom de projet/createur) **afin de** pouvoir le gérer | ? | 3 | 1 |
 | 5 | **En tant que** développeur, **je souhaite** pouvoir supprimer un projet en cas d'annulation ou d'abandon | ? | 3 | 1 |
 | 6 | **En tant que** développeur, **je souhaite** consulter la liste des projets | ? | 2 | 2 |
-| 7 | **En tant que** développeur, **je souhaite** pouvoir demander l'accès à un projet crée par un tiers  **afin de** pouvoir rejoindre l'équipe de développement | ? | 2 | 3 |
-| 8 | **En tant que** développeur, **je souhaite** pouvoir autoriser l'accès a des membres de l'équipe **afin qu**'ils puissent accéder à mon projet | ? | 3 | 3 |
-| 9 | **En tant que** développeur, **je souhaite** pouvoir supprimer l'accès a des membres de l'équipe **afin qu**'ils ne puissent plus accéder à mon projet | ? | 3 | 3 
-| 10 | **En tant que** développeur, **je souhaite** pouvoir ajouter une issue a mon projet (sous la forme de champs id/description/priorité/difficulté/sprint) **afin de** le décrire le plus précisement possible | ? | 3 | 1 |
+| 7 | **En tant que** développeur, **je souhaite** pouvoir inviter des développeurs à un projet **afin qu**'ils puissent intégrer l'équipe de développement | ? | 3 | 3 |
+| 10 | **En tant que** développeur, **je souhaite** pouvoir ajouter une issue a mon projet (sous la forme de champs id/description/priorité/difficulté/sprint) **afin de** synthétiser les besoins du projet et d'ajouter des informations sur ceux-ci | ? | 3 | 1 |
 | 11 | **En tant que** développeur, **je souhaite** pouvoir modifier une issue de mon projet **afin de** suivre les demandes du client | ? | 3 | 2 |
 | 12 | **En tant que** développeur, **je souhaite** pouvoir supprimer une issue de mon projet en cas d'erreur. | ? | 3 | 2 |
 | 13 | **En tant que** développeur (ou visiteur, suivant la confidentialité attribuée au projet), **je souhaite** pouvoir consulter le backlog d'un projet | ? | 2 | 1 |
 | 14 | **En tant que** développeur, **je souhaite** pouvoir créer un sprint à l'intérieur d'un projet **afin d'** organiser le travail de l'équipe de développement en tâches | ? | 3 | 2 |
-| 15 | **En tant que** développeur, **je souhaite** pouvoir consulter la liste des sprints d'un projet **afin d'** interagir avec ceux qui m'intéressent | ? | 2 | 2 |
-| 16 | **En tant que** développeur, **je souhaite** pouvoir retirer une tâche d'un sprint en cas d'erreur. | ? | 2 | 2 |
+| 15 | **En tant que** développeur, **je souhaite** pouvoir consulter la liste des sprints d'un projet | ? | 2 | 2 |
+| 16 | **En tant que** développeur, **je souhaite** pouvoir retirer une tâche d'un sprint en cas d'erreur | ? | 2 | 2 |
 | 17 | **En tant que** développeur, **je souhaite** pouvoir ajouter une tâche à un sprint **afin de** planifier le travail de l'équipe | ? | 2 | 2 |
 | 18 | **En tant que** développeur, **je souhaite** pouvoir modifier les données d'une tâche (temps évalué en jours-homme, date, nature de la tâche, dépendances éventuelles à d'autres tâches) **afin de** les corriger si besoin | ? | 3 | 3 |
-| 19 | **En tant que** développeur, **je souhaite** pouvoir accéder à la liste des tâches d'un sprint **afin de** procéder à leur réalisation | ? | 2 | 3 |
-| 20 | **En tant que** développeur, **je souhaite** pouvoir connaître la durée d'un sprint  **afin d'** organiser mon temps | ? | 1 | 3 |
+| 19 | **En tant que** développeur, **je souhaite** pouvoir accéder à la liste des tâches d'un sprint | ? | 2 | 3 |
+| 20 | **En tant que** développeur, **je souhaite** pouvoir connaître la durée d'un sprint  **afin d'** organiser mon travail | ? | 1 | 3 |
 | 21 | **En tant que** développeur, **je souhaite** pouvoir générer un burn down chart  **afin de** visualiser aisément si le projet respecte le temps imparti | ? | 3 | 3 |
