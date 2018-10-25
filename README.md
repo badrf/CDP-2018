@@ -20,8 +20,8 @@ Nombre de sprints prévus : 3
 | 13 | **En tant que** développeur (ou visiteur, suivant la confidentialité attribuée au projet), **je souhaite** pouvoir consulter le backlog d'un projet | ? | 2 | 1 |
 | 14 | **En tant que** développeur, **je souhaite** pouvoir créer un sprint à l'intérieur d'un projet **afin d'** organiser le travail de l'équipe de développement en tâches | ? | 3 | 2 |
 | 15 | **En tant que** développeur, **je souhaite** pouvoir consulter la liste des sprints d'un projet **afin d'** interagir avec ceux qui m'intéressent | ? | 2 | 2 |
-| 16 | **En tant que** développeur, **je souhaite** pouvoir retirer une tâche d'un sprint en cas d'erreur. | ? | 2 | 3 |
-| 17 | **En tant que** développeur, **je souhaite** pouvoir ajouter une tâche à un sprint **afin de** planifier le travail de l'équipe | ? | 2 | 3 |
+| 16 | **En tant que** développeur, **je souhaite** pouvoir retirer une tâche d'un sprint en cas d'erreur. | ? | 2 | 2 |
+| 17 | **En tant que** développeur, **je souhaite** pouvoir ajouter une tâche à un sprint **afin de** planifier le travail de l'équipe | ? | 2 | 2 |
 | 18 | **En tant que** développeur, **je souhaite** pouvoir modifier les données d'une tâche (temps évalué en jours-homme, date, nature de la tâche, dépendances éventuelles à d'autres tâches) **afin de** les corriger si besoin | ? | 3 | 3 |
 | 19 | **En tant que** développeur, **je souhaite** pouvoir accéder à la liste des tâches d'un sprint **afin de** procéder à leur réalisation | ? | 2 | 3 |
 | 20 | **En tant que** développeur, **je souhaite** pouvoir connaître la durée d'un sprint  **afin d'** organiser mon temps | ? | 1 | 3 |
