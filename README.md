@@ -1,6 +1,6 @@
 ﻿# CDP-2018
 Echelle de difficulté : 1-5  
-Echelle de priorité : Basse / Moyenne / Haute
+Echelle de priorité : Basse / Moyenne / Haute  
 Nombre de sprints prévus : 3
 
 | Numéro d'id | Description précise | Priorité | Difficulté | Sprint n° |
