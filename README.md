@@ -2,7 +2,7 @@
 
 Releases
 ======================
-Release la plus récente : 9 novembre 2018, 0.1
+Release la plus récente : 0.1 - 9 Novembre 2018.
 
 Anciennes releases
 -------------------
