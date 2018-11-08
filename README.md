@@ -4,6 +4,15 @@ Releases
 ======================
 Release la plus récente : 0.1 - 9 Novembre 2018.
 
+Installation
+-------------
+
+La release est livrée sous la forme d'une image Docker. Pour la télécharger, il suffit d'executer dans un terminal la commande suivante : 
+
+docker pull pierrinator/cdp2018:0.1   
+
+Vous pouvez remplacer 0.1 par la release souhaitée.
+
 Anciennes releases
 -------------------
 
