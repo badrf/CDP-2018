@@ -1,9 +1,21 @@
 ﻿# CDP-2018
+
+Releases
+======================
+Release la plus récente : 9 novembre 2018, 0.1
+
+Anciennes releases
+-------------------
+
+Aucune pour le moment.
+
+Backlog
+======================
 Echelle de difficulté : 1-5  
 Echelle de priorité : Basse / Moyenne / Haute  
 Nombre de sprints prévus : 3
 
-| Numéro d'id | Description précise | Priorité | Difficulté | Sprint n° |
+| Numéro d'US | Description précise | Priorité | Difficulté | Sprint n° |
 |----------|----------|----------|----------|----------|
 | 1 | **En tant que** visiteur, **je souhaite** créer un compte développeur à l'aide d'un login simple (username/password) **afin de** gérer mes projets | Moyenne | 4 | 1 |
 | 2 | **En tant que** visiteur, **je souhaite** pouvoir me connecter à l'aide des identifiants créés en issue n°1 **afin de** gérer mes projets | Moyenne | 2 | 1 |
