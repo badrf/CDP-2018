@@ -2,7 +2,8 @@
 
 Releases
 ======================
-Release la plus récente : 0.1 - 9 Novembre 2018.
+Release la plus récente : 0.1 - 9 Novembre 2018.   
+Changelog : Premier jet, test de release utilisable et fonctionnelle : seule une page HTML présentant un formulaire basique de création de projet est disponible.
 
 Installation
 -------------
