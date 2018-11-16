@@ -23,6 +23,8 @@ docker run -d -p 80:80  pierrinator/cdp2018:0.1
 
 Vous pouvez remplacer 0.1 par la release souhaitée.
 
+Vous pouvez alors accéder a la page HTML en tapant 0.0.0.0 sur votre navigateur.
+
 Anciennes releases
 -------------------
 
