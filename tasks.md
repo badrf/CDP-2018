@@ -12,5 +12,5 @@ Nombre de sprints prévus : 3
 | 4 | Ecriture du fichier app.js | 1 | 3 | 07/12/18 | Implémentation | 3 | En cours |
 | 5 | Design du fichier index.html | 0,5 | 0,5 | 09/11/18 | Design | 1 | Accomplie |
 | 6 | Ecriture du fichier index.html | 0,5 | 1 | 09/11/18 | Implémentation | 5 | Accomplie |
-| 7 | Design de base1.sql | 0,5 | 1 | 23/11/18 | Design | 1 | 23/11/18 | Design | 1 | Accomplie |
+| 7 | Design de base1.sql | 0,5 | 1 | 23/11/18 | Design | 1 | Accomplie |
 | 8 | Ecriture du fichier base1.sql | 0,5 | 2 | 23/11/18 | Implémentation | 7 | En cours |
