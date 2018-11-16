@@ -1,8 +1,5 @@
 Tâches
 ======================
-Echelle de difficulté : 1-5  
-Echelle de priorité : Basse / Moyenne / Haute  
-Nombre de sprints prévus : 3
 
 | ID | Description | Temps évalué en jour-homme meilleur cas | Temps évalué en jour-homme pire cas | Date limite | Nature | Dépendances | Etat |
 |----------|----------|----------|----------|----------|----------|----------|----------|
