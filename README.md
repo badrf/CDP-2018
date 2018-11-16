@@ -14,6 +14,15 @@ docker pull pierrinator/cdp2018:0.1
 
 Vous pouvez remplacer 0.1 par la release souhaitée.
 
+Exécution
+-------------
+
+L'execution peut se faire simplement via la commande suivante :
+
+docker run -d -p 80:80  pierrinator/cdp2018:0.1
+
+Vous pouvez remplacer 0.1 par la release souhaitée.
+
 Anciennes releases
 -------------------
 
