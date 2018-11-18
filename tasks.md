@@ -1,9 +1,6 @@
 Tâches
 ======================
 
-Tâches du sprint 1
------------------
-
 | Id de la tache | Description | Composant(s) | Ressource(s) | US Correspondante | Dépendance(s) | Etat | Développeur(s) | JH |
 |----|------------|---------------|--------|-------|-------------|----|-----|----|
 | T1 | Creation d'un fichier de génération Dockerfile et mise a disposition de l'image sur Docker Hub | Dockerfile  |  Dockerfile   |  x   |  x   | DONE | Pierre | 1 |
