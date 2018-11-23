@@ -2,8 +2,8 @@
 
 Releases
 ======================
-Release la plus récente : 0.1 - 9 Novembre 2018.   
-Changelog : Premier jet, test de release utilisable et fonctionnelle : seule une page HTML présentant un formulaire basique de création de projet est disponible.
+Release la plus récente : 0.2 - 23 Novembre 2018.   
+Changelog : Seconde itération, des formulaires de création d'issues et de projet et de modification d'issues sont disponibles mais non fonctionnels.
 
 Installation
 -------------
@@ -17,7 +17,7 @@ Vous pouvez remplacer 0.1 par la release souhaitée.
 Exécution
 -------------
 
-L'execution peut se faire simplement via la commande suivante :
+L'exécution peut se faire simplement via la commande suivante :
 
 docker run -d -p 80:80  pierrinator/cdp2018:0.1
 
@@ -28,7 +28,7 @@ Vous pouvez alors accéder a la page HTML en tapant 0.0.0.0 sur votre navigateur
 Anciennes releases
 -------------------
 
-Aucune pour le moment.
+0.1 - 9 Novembre 2018.
 
 Backlog
 ======================
