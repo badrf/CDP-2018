@@ -4,7 +4,10 @@
   "description": "install dependencies",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.11.0"
+    "body-parser": "^1.18.3",
+    "connect": "^3.6.6",
+    "express": "^4.11.0",
+    "jsdom": "^13.0.0"
   },
   "scripts": {
     "start": "node app.js"
