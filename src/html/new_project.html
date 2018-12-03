@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ajouter un projet</title>
+	<title>Add project</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -18,10 +18,9 @@
 
 				<ul class="nav navbar-nav">
 					<li><a href="/">Home</a></li>
-          <li><a href="/login">inscription</a></li>
-          <li><a href="/new_issue">nouveau issue</a></li>
-          <li><a href="/new_project">ajouter un projet</a></li>
-          <li><a href="/edit_issue">modifier un issue</a></li>
+					<li><a href="/login">Sign in</a></li>
+					<li><a href="/new_issue">New issue</a></li>
+					<li><a href="/new_project">New project</a></li>
 				</ul>
 
 			</div>
@@ -32,10 +31,9 @@
 
 <h1>Add a project</h1>
 <form method="post" action="/addproj">
-<label>Enter Your project</label><br><br>
-<input type="text" name="title" placeholder="Enter project title" required>
-<input type="text" name="firstName" placeholder="Enter your first name..." required>
-<input type="text" name="lastName" placeholder="Enter your last name..." required>
+<input type="text" name="pid" placeholder="Project id" required>
+<input type="text" name="title" placeholder="Project title" required>
+<input type="text" name="username" placeholder="Username" required>
 <input type="submit" value="Add Project">
 </form>
 

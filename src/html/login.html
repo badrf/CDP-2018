@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Inscription</title>
+	<title>Sign in</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -18,10 +18,9 @@
 
 				<ul class="nav navbar-nav">
 					<li><a href="/">Home</a></li>
-          <li><a href="/login">inscription</a></li>
-          <li><a href="/new_issue">nouveau issue</a></li>
-          <li><a href="/new_project">ajouter un projet</a></li>
-          <li><a href="/edit_issue">modifier un issue</a></li>
+					<li><a href="/login">Sign in</a></li>
+					<li><a href="/new_issue">New issue</a></li>
+					<li><a href="/new_project">New project</a></li>
 				</ul>
 
 			</div>
@@ -30,12 +29,10 @@
 
 	<main>
 		<h1>Inscription</h1>
-<form method="post" action="/addname">
-<label>Enter Your project</label><br><br>
-<input type="text" name="nom de projet" placeholder="Enter the name of project..." required>
-<input type="text" name="firstName" placeholder="Enter first name..." required>
-<input type="text" name="lastName" placeholder="Enter last name..." required>
-<input type="submit" value="Add Name">
+<form method="post" action="/login">
+<input type="text" name="username" placeholder="Username" required>
+<input type="text" name="password" placeholder="Password" required>
+<input type="submit" value="Sign in">
 </form>
 	</main>
 
