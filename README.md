@@ -5,14 +5,17 @@ Releases
 Release la plus récente : 0.2 - 23 Novembre 2018.   
 Changelog : Seconde itération, la page html propose des formulaires de créations de projets et d'issues ainsi que de modifications d'issues pas encore fonctionnels. US : 1, 2, 4, 8, 9
 
-Installation et éxécution
+Installation 
 -------------
+L'installation peut se faire simplement via la commande suivante :
 
+docker-compose build
+
+Execution
+-------------------
 L'execution peut se faire simplement via la commande suivante :
 
 docker-compose up
-
-Vous pouvez alors accéder a la page HTML en tapant 0.0.0.0:8080 sur votre navigateur.
 
 Anciennes releases
 -------------------
