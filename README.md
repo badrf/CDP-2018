@@ -5,25 +5,14 @@ Releases
 Release la plus récente : 0.2 - 23 Novembre 2018.   
 Changelog : Seconde itération, la page html propose des formulaires de créations de projets et d'issues ainsi que de modifications d'issues pas encore fonctionnels. US : 1, 2, 4, 8, 9
 
-Installation
--------------
-
-La release est livrée sous la forme d'une image Docker. Pour la télécharger, il suffit d'exécuter dans un terminal la commande suivante : 
-
-docker pull pierrinator/cdp2018:0.2   
-
-Vous pouvez remplacer 0.2 par la release souhaitée.
-
-Exécution
+Installation et éxécution
 -------------
 
 L'execution peut se faire simplement via la commande suivante :
 
-docker run -d -p 8080:8080  pierrinator/cdp2018:0.2
+docker-compose up
 
-Vous pouvez remplacer 0.2 par la release souhaitée, et le premier 8080 par le port de votre choix.
-
-Vous pouvez alors accéder a la page HTML en tapant 0.0.0.0 sur votre navigateur.
+Vous pouvez alors accéder a la page HTML en tapant 0.0.0.0:8080 sur votre navigateur.
 
 Anciennes releases
 -------------------
