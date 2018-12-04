@@ -29,6 +29,22 @@ app.get('/login',function(req,res){
   res.sendFile( path.resolve('../html/login.html') );
 });
 
+app.get('/new_task',function(req,res){
+  res.sendFile( path.resolve('../html/new_task.html') );
+});
+
+app.get('/edit_task',function(req,res){
+  res.sendFile( path.resolve('../html/edit_task.html') );
+});
+
+app.get('/new_sprint',function(req,res){
+  res.sendFile( path.resolve('../html/new_sprint.html') );
+});
+
+app.get('/edit_sprint',function(req,res){
+  res.sendFile( path.resolve('../html/edit_sprint.html') );
+});
+
 app.post('/login', function(request, response){
   var user = request.body.username;
   var pass = request.body.password;
@@ -41,12 +57,13 @@ app.post('/signup', function(request, response){
 
 app.post('/addissue', function(request, response){
   document = new JSDOM("../src/new_issue.html").window.document;
+  var pid = request.body.pid
   var id = request.body.id;
   var description = request.body.description;
   var priority = request.body.priority;
   var difficulty = request.body.difficulty;
   var sprint = request.body.sprint;
-  console.log(id + description + priority + difficulty + sprint);
+  console.log(pid + id + description + priority + difficulty + sprint);
   document.writeln("test");
 });
 
@@ -60,17 +77,18 @@ app.post('/addproj', function(request, response){
 app.post('/addtask', function(request, response){
   var id = request.body.id;
   var description = request.body.description;
-  var composant = request.body.composant;
+  var component = request.body.component;
   var ressource = request.body.ressource;
   var us = request.body.us;
   var dependency = request.body.dependency;
   var state = request.body.state;
   var dev = request.body.dev;
   var jh = request.body.jh;
-  console.log(id + description + composant + ressource + us + dependency + state + dev + jh); 
+  console.log(id + description + component + ressource + us + dependency + state + dev + jh); 
 }); 
 
 app.post('/addsprint', function(request, response){
+  var pid = request.body.pid;
   var start = request.body.start;
   var end = request.body.end;
   var state = request.body.state;
