@@ -65,13 +65,15 @@ app.post('/addissue', function(request, response){
   var sprint = request.body.sprint;
   console.log(pid + id + description + priority + difficulty + sprint);
   document.writeln("test");
-});
+  response.sendFile( path.resolve('../html/index.html'));
+  });
 
 app.post('/addproj', function(request, response){
   var pid = request.body.pid;
   var title = request.body.title;
   var username = request.body.username;
   console.log(pid + title + username);  
+  response.sendFile( path.resolve('../html/index.html'));
 });
 
 app.post('/addtask', function(request, response){
@@ -84,7 +86,8 @@ app.post('/addtask', function(request, response){
   var state = request.body.state;
   var dev = request.body.dev;
   var jh = request.body.jh;
-  console.log(id + description + component + ressource + us + dependency + state + dev + jh); 
+  console.log(id + description + component + ressource + us + dependency + state + dev + jh);
+  response.sendFile( path.resolve('../html/index.html')); 
 }); 
 
 app.post('/addsprint', function(request, response){
@@ -93,7 +96,8 @@ app.post('/addsprint', function(request, response){
   var end = request.body.end;
   var state = request.body.state;
   var number = request.body.number;
-  console.log(start + end + state + number); 
+  console.log(start + end + state + number);
+  response.sendFile( path.resolve('../html/index.html')); 
 }); 
 
 
