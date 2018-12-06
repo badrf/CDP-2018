@@ -15,7 +15,7 @@ con.connect(function(err) {
   if (err) {
     return console.error('error: ' + err.message);
   }
- 
+
   console.log('Connected to the MySQL server.');
 });
 
@@ -66,11 +66,17 @@ app.get('/edit_sprint', function (req, res) {
 app.post('/login', function (req, res) {
   var user = req.body.username;
   var pass = req.body.password;
+  //TODO
 });
 
 app.post('/signup', function (req, res) {
   var user = req.body.username;
   var pass = req.body.password;
+  var sql = "INSERT INTO users (login, password) VALUES (user,pass)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 user logged");
+  });
 });
 
 app.post('/addissue', function (req, res) {
@@ -88,6 +94,11 @@ app.post('/addissue', function (req, res) {
     difficulty: difficulty,
     sprint: sprint
   });
+  var sql = "INSERT INTO issues (id,description,priority,difficulty,projects_id,sprint) VALUES (id,description,priority,difficulty,pid,sprint)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 issue added");
+  });
 });
 
 app.post('/addproj', function (req, res) {
@@ -98,6 +109,11 @@ app.post('/addproj', function (req, res) {
     pid: pid,
     title: title,
     username: username
+  });
+  var sql = "INSERT INTO projects (id,name,user_id) VALUES (pid,title,username)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 project added");
   });
 });
 
@@ -125,6 +141,11 @@ app.post('/addtask', function (req, res) {
     dev: dev,
     jh: jh
   })
+  var sql = "INSERT INTO task (sprint_idsprint, idtask,description,component,ressource,us,dependancy,state,dev,jh) VALUES (pid, id,component,ressource,us,dependancy,state,dev,jh)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 task added");
+  });
 });
 
 app.post('/addsprint', function (req, res) {
@@ -140,6 +161,11 @@ app.post('/addsprint', function (req, res) {
     state: state,
     number: number
   })
+  var sql = "INSERT INTO sprint (idsprint,start,end,state,projects_id) VALUES (number,start,end,state,pid)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 sprint added");
+  });
 });
 
 app.listen(8080);
