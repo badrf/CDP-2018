@@ -6,6 +6,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "connect": "^3.6.6",
+    "ejs": "^2.6.1",
     "express": "^4.11.0",
     "jsdom": "^13.0.0"
   },

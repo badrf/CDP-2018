@@ -10,7 +10,7 @@ RUN npm install
 
 # Bundle app source
 COPY src/js/* ./
-COPY src/html/* ../html/
+COPY src/ejs/* ../ejs/
 
 EXPOSE 8080
 CMD [ "npm", "start" ]

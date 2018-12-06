@@ -5,100 +5,92 @@ var path = require("path");
 var jsdom = require("jsdom");
 var { JSDOM } = jsdom;
 
+app.set('view engine', 'ejs');
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
 app.get('/',function(req,res){
-  res.sendFile( path.resolve('../html/index.html') );
+  res.render( path.resolve('../ejs/index.ejs') );
 });
 
 app.get('/new_issue',function(req,res){
-res.sendFile( path.resolve('../html/new_issue.html') );
+  res.render( path.resolve('../ejs/new_issue.ejs') );
 });
 
 app.get('/new_project',function(req,res){
-  res.sendFile( path.resolve('../html/new_project.html') );
+  res.render( path.resolve('../ejs/new_project.ejs') );
 });
 
 app.get('/edit_issue',function(req,res){
-  res.sendFile( path.resolve('../html/edit_issue.html') );
-});
+  res.render( path.resolve('../ejs/edit_issue.ejs') );});
 
 app.get('/login',function(req,res){
-  res.sendFile( path.resolve('../html/login.html') );
-});
+  res.render( path.resolve('../ejs/login.ejs') );});
 
 app.get('/new_task',function(req,res){
-  res.sendFile( path.resolve('../html/new_task.html') );
-});
+  res.render( path.resolve('../ejs/new_task.ejs') );});
 
 app.get('/edit_task',function(req,res){
-  res.sendFile( path.resolve('../html/edit_task.html') );
-});
+  res.render( path.resolve('../ejs/edit_task.ejs') );});
 
 app.get('/new_sprint',function(req,res){
-  res.sendFile( path.resolve('../html/new_sprint.html') );
-});
+  res.render( path.resolve('../ejs/new_sprint.ejs') );});
 
 app.get('/edit_sprint',function(req,res){
-  res.sendFile( path.resolve('../html/edit_sprint.html') );
+  res.render( path.resolve('../ejs/edit_sprint.ejs') );});
+
+app.post('/login', function(req, res){
+  var user = req.body.username;
+  var pass = req.body.password;
 });
 
-app.post('/login', function(request, response){
-  var user = request.body.username;
-  var pass = request.body.password;
+app.post('/signup', function(req, res){
+  var user = req.body.username;
+  var pass = req.body.password;
 });
 
-app.post('/signup', function(request, response){
-  var user = request.body.username;
-  var pass = request.body.password;
-});
-
-app.post('/addissue', function(request, response){
+app.post('/addissue', function(req, res){
   document = new JSDOM("../src/new_issue.html").window.document;
-  var pid = request.body.pid
-  var id = request.body.id;
-  var description = request.body.description;
-  var priority = request.body.priority;
-  var difficulty = request.body.difficulty;
-  var sprint = request.body.sprint;
+  var pid = req.body.pid
+  var id = req.body.id;
+  var description = req.body.description;
+  var priority = req.body.priority;
+  var difficulty = req.body.difficulty;
+  var sprint = req.body.sprint;
   console.log(pid + id + description + priority + difficulty + sprint);
   document.writeln("test");
-  response.sendFile( path.resolve('../html/index.html'));
-  });
+  res.render( path.resolve('../ejs/index.ejs') );  });
 
-app.post('/addproj', function(request, response){
-  var pid = request.body.pid;
-  var title = request.body.title;
-  var username = request.body.username;
+app.post('/addproj', function(req, res){
+  var pid = req.body.pid;
+  var title = req.body.title;
+  var username = req.body.username;
   console.log(pid + title + username);  
-  response.sendFile( path.resolve('../html/index.html'));
-});
+  res.render( path.resolve('../ejs/index.ejs') );});
 
-app.post('/addtask', function(request, response){
-  var id = request.body.id;
-  var description = request.body.description;
-  var component = request.body.component;
-  var ressource = request.body.ressource;
-  var us = request.body.us;
-  var dependency = request.body.dependency;
-  var state = request.body.state;
-  var dev = request.body.dev;
-  var jh = request.body.jh;
+app.post('/addtask', function(req, res){
+  var id = req.body.id;
+  var description = req.body.description;
+  var component = req.body.component;
+  var ressource = req.body.ressource;
+  var us = req.body.us;
+  var dependency = req.body.dependency;
+  var state = req.body.state;
+  var dev = req.body.dev;
+  var jh = req.body.jh;
   console.log(id + description + component + ressource + us + dependency + state + dev + jh);
-  response.sendFile( path.resolve('../html/index.html')); 
-}); 
+  res.render( path.resolve('../ejs/index.ejs') );}); 
 
-app.post('/addsprint', function(request, response){
-  var pid = request.body.pid;
-  var start = request.body.start;
-  var end = request.body.end;
-  var state = request.body.state;
-  var number = request.body.number;
+app.post('/addsprint', function(req, res){
+  var pid = req.body.pid;
+  var start = req.body.start;
+  var end = req.body.end;
+  var state = req.body.state;
+  var number = req.body.number;
   console.log(start + end + state + number);
-  response.sendFile( path.resolve('../html/index.html')); 
-}); 
+  res.render( path.resolve('../ejs/index.ejs') );}); 
 
 
 
