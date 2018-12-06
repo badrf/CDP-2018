@@ -2,7 +2,22 @@ var express = require("express");
 var bodyParser = require('body-parser')
 var app = express()
 var path = require("path");
-var none = "None";
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "127.0.0.1",
+  user: "cdp",
+  password: "cdp",
+  database: "base1",
+  port: '/var/run/mysqld/mysqld.sock'
+});
+con.connect(function(err) {
+  if (err) {
+    return console.error('error: ' + err.message);
+  }
+ 
+  console.log('Connected to the MySQL server.');
+});
 
 app.set('view engine', 'ejs');
 
