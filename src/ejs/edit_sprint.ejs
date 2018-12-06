@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Edit sprint</title>
@@ -10,6 +11,7 @@
 		body 	{ padding-top:50px; }
 	</style>
 </head>
+
 <body class="container">
 
 	<header>
@@ -20,9 +22,9 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/login">Sign in</a></li>
 					<li><a href="/new_issue">New issue</a></li>
-                    <li><a href="/new_project">New project</a></li>
-                    <li><a href="/edit_issue">Edit issue</a></li>
-                    <li><a href="/new_task">New task</a></li>
+					<li><a href="/new_project">New project</a></li>
+					<li><a href="/edit_issue">Edit issue</a></li>
+					<li><a href="/new_task">New task</a></li>
 					<li><a href="/edit_task">Edit task</a></li>
 					<li><a href="/new_sprint">New sprint</a></li>
 					<li><a href="/edit_sprint">Edit sprint</a></li>
@@ -34,24 +36,25 @@
 
 	<main>
 
-<h1>Edit a sprint</h1>
-<form method="post" action="/addsprint">
-<input type="text" name="pid" placeholder="Enter project id" required>
-<input type="text" name="start" placeholder="Enter start date" required>
-<input type="text" name="end" placeholder="Enter end date" required>
-<input type="text" name="state" placeholder="Enter current" required>
-<input type="text" name="number" placeholder="Enter sprint number" required>
-<input type="submit" value="Add sprint">
-</form>
+		<h1>Edit a sprint</h1>
+		<form method="post" action="/addsprint">
+			<input type="text" name="pid" placeholder="Enter project id" required>
+			<input type="text" name="start" placeholder="Enter start date" required>
+			<input type="text" name="end" placeholder="Enter end date" required>
+			<input type="text" name="state" placeholder="Enter current" required>
+			<input type="text" name="number" placeholder="Enter sprint number" required>
+			<input type="submit" value="Add sprint">
+		</form>
 
-</main>
+	</main>
 
-<footer>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-  <p class="text-center text-muted">&copy; Copyright 2018 CDP 1-2</p>
-</footer>
+	<footer>
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+		<p class="text-center text-muted">&copy; Copyright 2018 CDP 1-2</p>
+	</footer>
 
 </body>
+
 </html>
