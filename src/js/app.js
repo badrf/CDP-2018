@@ -5,11 +5,11 @@ var path = require("path");
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "cdp",
-  password: "cdp",
+  host: "db",
+  user: "root",
+  password: "cdproot",
   database: "base1",
-  port: '/var/run/mysqld/mysqld.sock'
+  port: 3306
 });
 con.connect(function(err) {
   if (err) {
