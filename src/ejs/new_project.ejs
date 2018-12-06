@@ -41,6 +41,11 @@
 <input type="text" name="username" placeholder="Username" required>
 <input type="submit" value="Add Project" id="confirm">
 </form>
+<% if ((locals.pid) && (locals.title) && (locals.username)) { %>
+	<h4>Project ID : <%= pid %></h4>
+	<h4>Project title : <%= title %></h4>
+	<h4>Project username : <%= username %></h4>
+<% } %>
 
 </main>
 

@@ -42,6 +42,13 @@
 <input type="text" name="state" placeholder="Enter current" required>
 <input type="text" name="number" placeholder="Enter sprint number" required>
 <input type="submit" value="Add sprint">
+<% if ((locals.pid) && (locals.start) && (locals.end) && (locals.state) && (locals.number)) { %>
+	<h4>Project ID : <%= pid %></h4>
+	<h4>Sprint start : <%= start %></h4>
+	<h4>Sprint end : <%= end %></h4>
+	<h4>Sprint state : <%= state %></h4>
+	<h4>Sprint number : <%= number %></h4>
+<% } %>
 </form>
 
 </main>

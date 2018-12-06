@@ -44,6 +44,14 @@
 <input type="text" name="sprint" placeholder="Enter sprint number" required>
 <input type="submit" value="Add issue">
 </form>
+<% if ((locals.pid) && (locals.id) && (locals.description) && (locals.priority) && (locals.difficulty) && (locals.sprint)) { %>
+	<h4>Project ID : <%= pid %></h4>
+	<h4>US id : <%= id %></h4>
+	<h4>US description : <%= description %></h4>
+	<h4>US priority : <%= priority %></h4>
+	<h4>US difficulty : <%= difficulty %></h4>
+	<h4>US difficulty : <%= sprint %></h4>
+<% } %>
 
 </main>
 
