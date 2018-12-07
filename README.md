@@ -5,9 +5,9 @@
 Releases
 ======================
 Release finale : 0.3 - 07 Décembre 2018.   
-Changelog : Troisième itération, la mise en place du base de donné et la page html propose une formulaire d'inscription et des formulaires de créations de projets, d'issues, tâches et sprint  ainsi que leur modifications.
+Changelog : Troisième itération, la mise en place de la base de données permet un formulaire d'inscription et des formulaires de création de projets, d'issues, tâches et sprints  ainsi que leur modification.
 
-En plus on a mis en place des tests pour l'ajout d'un projet, la page d'accueil ainsi que la page d'inscription. 
+Nous avons également mis en place des tests pour l'ajout d'un projet, la page d'accueil ainsi que la page d'inscription. 
 
 Installation 
 -------------
@@ -17,7 +17,7 @@ docker-compose build
 
 Execution
 -------------------
-L'execution peut se faire simplement via la commande suivante :
+L'exécution peut se faire simplement via la commande suivante :
 
 docker-compose up
 
