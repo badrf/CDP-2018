@@ -74,11 +74,11 @@ app.post('/login', function (req, res) {
 });
 
 app.post('/register', function (req, res) {
-  
+
   if(req.method == "POST"){
     var name= req.body.username;
     var pass= req.body.password;
-    var email= req.body.email;    
+    var email= req.body.email;
 
     var sql = "INSERT INTO `users`(`username`,`password`,`email`) VALUES ('" + name + "','" + pass + "','" + email + "')";
 
@@ -94,24 +94,31 @@ app.post('/register', function (req, res) {
 });
 
 app.post('/addissue', function (req, res) {
-  var pid = req.body.pid
-  var id = req.body.id;
-  var description = req.body.description;
-  var priority = req.body.priority;
-  var difficulty = req.body.difficulty;
-  var sprint = req.body.sprint;
-  res.render(path.resolve('../ejs/new_issue.ejs'), {
-    pid: pid,
-    id: id,
-    description: description,
-    priority: priority,
-    difficulty: difficulty,
-    sprint: sprint
-  });
-  var sql = "INSERT INTO issues (id,description,priority,difficulty,projects_id,sprint) VALUES (id,description,priority,difficulty,pid,sprint)";
+  if(req.method == "POST"){
+    var pid = req.body.pid
+    var id = req.body.id;
+    var description = req.body.description;
+    var priority = req.body.priority;
+    var difficulty = req.body.difficulty;
+    var sprint = req.body.sprint;
+    var sql = "INSERT INTO issues (id,description,priority,difficulty,projects_id,sprint) VALUES  ('" + id + "','" + description + "','" + priority + "','" + difficulty + "','" + pid + "','" + sprint + "')";
+    var query = con.query(sql, function(err, result) {
+        console.log("1 issue added");
+        res.render(path.resolve('../ejs/new_issue.ejs'), {
+          pid: pid,
+          id: id,
+          description: description,
+          priority: priority,
+          difficulty: difficulty,
+          sprint: sprint
+        });
+    });
+ } else {
+    //res.redirect('register');
+ }
   con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("1 issue added");
+    console.log("err");
   });
 });
 
