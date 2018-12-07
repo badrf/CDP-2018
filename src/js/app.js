@@ -84,7 +84,7 @@ app.post('/register', function (req, res) {
 
     var query = con.query(sql, function(err, result) {
 
-        console.log("1 user regisered");
+        console.log("1 user registered");
        res.render(path.resolve('../ejs/login.ejs'));
     });
 

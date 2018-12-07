@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "./node_modules/.bin/eslint app.js"
+    "lint": "./node_modules/.bin/eslint app.js",
+    "test": "python3 ../../test/addproj.py"
   },
   "repository": {
     "type": "git",

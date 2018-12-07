@@ -10,7 +10,7 @@ services:
     depends_on:
       - db
   db:
-     image: pierrinator/mymysql:1.0
+     build: ./sql
      container_name: db
      ports:
        - "3306:3306"
