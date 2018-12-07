@@ -7,7 +7,7 @@ Releases
 Release finale : 0.3 - 07 Décembre 2018.   
 Changelog : Troisième itération, la mise en place de la base de données permet un formulaire d'inscription et des formulaires de création de projets, d'issues, tâches et sprints  ainsi que leur modification.
 
-Nous avons également mis en place des tests pour l'ajout d'un projet, la page d'accueil ainsi que la page d'inscription. 
+Nous avons également mis en place des tests pour l'ajout d'un projet, ainsi qu'une page d'inscription distincte de la page d'accueil développeur.
 
 Installation 
 -------------
