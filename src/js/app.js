@@ -47,6 +47,10 @@ app.get('/login', function (req, res) {
   res.render(path.resolve('../ejs/login.ejs'));
 });
 
+app.get('/register', function (req, res) {
+  res.render(path.resolve('../ejs/register.ejs'));
+});
+
 app.get('/new_task', function (req, res) {
   res.render(path.resolve('../ejs/new_task.ejs'));
 });
@@ -69,14 +73,24 @@ app.post('/login', function (req, res) {
   //TODO
 });
 
-app.post('/signup', function (req, res) {
-  var user = req.body.username;
-  var pass = req.body.password;
-  var sql = "INSERT INTO users (login, password) VALUES (user,pass)";
-  con.query(sql, function (err, result) {
-    if (err) throw err;
-    console.log("1 user logged");
-  });
+app.post('/register', function (req, res) {
+  
+  if(req.method == "POST"){
+    var name= req.body.username;
+    var pass= req.body.password;
+    var email= req.body.email;    
+
+    var sql = "INSERT INTO `users`(`username`,`password`,`email`) VALUES ('" + name + "','" + pass + "','" + email + "')";
+
+    var query = con.query(sql, function(err, result) {
+
+        console.log("1 user regisered");
+       res.render(path.resolve('../ejs/login.ejs'));
+    });
+
+ } else {
+    res.redirect('register');
+ }
 });
 
 app.post('/addissue', function (req, res) {
