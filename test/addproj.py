@@ -11,5 +11,5 @@ pid.send_keys("some text")
 username.send_keys("some text")
 title.send_keys("some text")
 confirm.send_keys(Keys.ENTER)
-assert "Project Viewer" in driver.title
+assert driver.page_source.find("Project ID")
 driver.close()

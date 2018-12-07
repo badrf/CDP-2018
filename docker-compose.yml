@@ -10,7 +10,7 @@ services:
     depends_on:
       - db
   db:
-     build : sql/
+     image: pierrinator/mymysql:1.0
      container_name: db
      ports:
        - "3306:3306"
@@ -18,4 +18,4 @@ services:
        - "MYSQL_ROOT_PASSWORD=cdproot"
        - "MYSQL_USER=cdp"
        - "MYSQL_PASSWORD=cdp"
-       - "MYSQL_DATABASE=cdp2018"
+       - "MYSQL_DATABASE=base1"

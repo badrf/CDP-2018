@@ -5,17 +5,17 @@ var path = require("path");
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "cdp",
-  password: "cdp",
+  host: "db",
+  user: "root",
+  password: "cdproot",
   database: "base1",
-  port: '/var/run/mysqld/mysqld.sock'
+  port: 3306
 });
 con.connect(function(err) {
   if (err) {
     return console.error('error: ' + err.message);
   }
- 
+
   console.log('Connected to the MySQL server.');
 });
 
@@ -47,6 +47,10 @@ app.get('/login', function (req, res) {
   res.render(path.resolve('../ejs/login.ejs'));
 });
 
+app.get('/register', function (req, res) {
+  res.render(path.resolve('../ejs/register.ejs'));
+});
+
 app.get('/new_task', function (req, res) {
   res.render(path.resolve('../ejs/new_task.ejs'));
 });
@@ -66,11 +70,27 @@ app.get('/edit_sprint', function (req, res) {
 app.post('/login', function (req, res) {
   var user = req.body.username;
   var pass = req.body.password;
+  //TODO
 });
 
-app.post('/signup', function (req, res) {
-  var user = req.body.username;
-  var pass = req.body.password;
+app.post('/register', function (req, res) {
+  
+  if(req.method == "POST"){
+    var name= req.body.username;
+    var pass= req.body.password;
+    var email= req.body.email;    
+
+    var sql = "INSERT INTO `users`(`username`,`password`,`email`) VALUES ('" + name + "','" + pass + "','" + email + "')";
+
+    var query = con.query(sql, function(err, result) {
+
+        console.log("1 user regisered");
+       res.render(path.resolve('../ejs/login.ejs'));
+    });
+
+ } else {
+    res.redirect('register');
+ }
 });
 
 app.post('/addissue', function (req, res) {
@@ -88,6 +108,11 @@ app.post('/addissue', function (req, res) {
     difficulty: difficulty,
     sprint: sprint
   });
+  var sql = "INSERT INTO issues (id,description,priority,difficulty,projects_id,sprint) VALUES (id,description,priority,difficulty,pid,sprint)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 issue added");
+  });
 });
 
 app.post('/addproj', function (req, res) {
@@ -98,6 +123,11 @@ app.post('/addproj', function (req, res) {
     pid: pid,
     title: title,
     username: username
+  });
+  var sql = "INSERT INTO projects (id,name,user_id) VALUES (pid,title,username)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 project added");
   });
 });
 
@@ -125,6 +155,11 @@ app.post('/addtask', function (req, res) {
     dev: dev,
     jh: jh
   })
+  var sql = "INSERT INTO task (sprint_idsprint, idtask,description,component,ressource,us,dependancy,state,dev,jh) VALUES (pid, id,component,ressource,us,dependancy,state,dev,jh)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 task added");
+  });
 });
 
 app.post('/addsprint', function (req, res) {
@@ -140,6 +175,11 @@ app.post('/addsprint', function (req, res) {
     state: state,
     number: number
   })
+  var sql = "INSERT INTO sprint (idsprint,start,end,state,projects_id) VALUES (number,start,end,state,pid)";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 sprint added");
+  });
 });
 
 app.listen(8080);
