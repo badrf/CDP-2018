@@ -1,9 +1,13 @@
 ﻿# CDP-2018
 
+[![Build Status](https://travis-ci.com/badrf/CDP-2018.svg?branch=master)](https://travis-ci.com/badrf/CDP-2018)
+
 Releases
 ======================
-Release la plus récente : 0.2 - 23 Novembre 2018.   
-Changelog : Seconde itération, la page html propose des formulaires de créations de projets et d'issues ainsi que de modifications d'issues pas encore fonctionnels. US : 1, 2, 4, 8, 9
+Release finale : 0.3 - 07 Décembre 2018.   
+Changelog : Troisième itération, la mise en place du base de donné et la page html propose une formulaire d'inscription et des formulaires de créations de projets, d'issues, tâches et sprint  ainsi que leur modifications.
+
+En plus on a mis en place des tests pour l'ajout d'un projet, la page d'accueil ainsi que la page d'inscription. 
 
 Installation 
 -------------
@@ -20,7 +24,10 @@ docker-compose up
 Anciennes releases
 -------------------
 
-0.1 - 9 Novembre 2018.
+La release précédente : 0.2 - 23 Novembre 2018.   
+Une page html qui propose des formulaires de créations de projets et d'issues ainsi que de modifications d'issues pas encore fonctionnels.
+
+La première release:  0.1 - 9 Novembre 2018.
 Une page html simple proposant un formulaire basique de création de projet.
 
 Backlog
